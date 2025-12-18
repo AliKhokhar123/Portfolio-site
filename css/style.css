@@ -4405,3 +4405,21 @@ a:hover .icon-box-2 {
     }
 
 }
+.floating-banner img {
+    max-width: 80%;   
+    height: auto;
+}
+
+
+@media (max-width: 991px) {
+    .floating-banner img {
+        max-width: 60%;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .floating-banner img {
+        display: none;
+    }
+}
