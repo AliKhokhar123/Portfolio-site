@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>PrimeGrowth — SEO & Google Optimization for Local Businesses</title>
     <meta name="description"
         content="We turn local businesses into lead-generating machines through SEO, Google Business Profile growth, and high-converting websites.">
@@ -19,6 +20,10 @@
     <meta property="og:type" content="website">
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         .marquee-container {
             overflow: hidden;
             user-select: none;
@@ -166,25 +171,25 @@
 
         .process-list li {
             color: rgba(255, 255, 255, 0.6) !important;
-            font-size: 0.9rem;
-            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+            margin-bottom: 0.85rem;
             display: flex;
             align-items: center;
             gap: 10px;
         }
 
         .process-list li i {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             color: var(--accent-color);
             opacity: 0.8;
         }
 
         .process-footer-text {
-            font-size: 0.85rem;
+            font-size: 1rem;
             font-weight: 500;
             color: var(--accent-color);
             margin-top: auto;
-            padding-top: 1rem;
+            padding-top: 1.25rem;
         }
 
         @keyframes pulse-ring {
@@ -205,6 +210,11 @@
             animation: pulse-ring 2.5s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
             border-radius: 50%;
         }
+
+        /* Custom Swiper Smooth Scroll */
+        .swiperTestimonials .swiper-wrapper {
+            transition-timing-function: linear !important;
+        }
     </style>
 </head>
 
@@ -216,9 +226,9 @@
                 <!-- Logo -->
                 <div class="logo-container">
                     <a class="navbar-brand d-flex align-items-center" href="/">
-                        <img src="image/profile.jpg" alt="Ali Ahmed" class="img-fluid rounded-circle"
-                            style="width:40px; height:40px; object-fit:cover;">
-                        <span style="color:white; margin-left:10px; font-weight:600;">Ali Ahmed</span>
+                        <img src="image/logo/logo.png" alt="Ali Ahmed" class="img-fluid"
+                            style="width:100px; height:100px; object-fit:contain;">
+                        <!-- <span style="color:white; margin-left:10px; font-weight:600;">Ali Ahmed</span> -->
                     </a>
                 </div>
 
@@ -230,15 +240,24 @@
 
                 <!-- Menu -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-xl-4 ps-xl-5 me-auto mb-2 mb-xl-0 gap-1">
+                    <ul class="navbar-nav ms-auto mb-2 mb-xl-0 gap-1">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="/">Home</a>
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mission">Mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#results">Results</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#how-it-works">How It Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#faq">FAQs</a>
@@ -324,66 +343,140 @@
         </div>
         <!-- End Banner -->
 
-        <!-- Trust Section -->
-        <div class="section bg-accent-5">
+        <!-- Reviews Section -->
+        <div id="testimonials" class="section bg-accent-5">
             <div class="r-container">
                 <div class="section-header text-center scrollanimation animated fadeInDown adr-7">
-                    <h6 class="mini-heading">Businesses We’ve Worked With</h6>
-                    <h2>Websites We’ve <span class="text-accent">Built & Optimized</span></h2>
-                    <p class="section-para">
-                        We’ve partnered with service businesses across multiple industries to improve visibility,
-                        performance, and conversions.
+                    <h6 class="mini-heading">TESTIMONIALS</h6>
+                    <h2>What Our <span class="text-accent">Clients Say</span></h2>
+                    <p class="section-para mx-auto">
+                        Don't just take our word for it. Here’s how we’ve helped local businesses dominate their local
+                        search.
                     </p>
                 </div>
 
-                <div class="marquee-container scrollanimation animated fadeInUp adr-7">
-                    <div class="marquee-content">
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-                                alt="Google"></div>
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg"
-                                alt="Microsoft"></div>
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg"
-                                alt="Meta"></div>
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+                <div class="swiper swiperTestimonials scrollanimation animated fadeInUp adr-7">
+                    <div class="swiper-wrapper">
+                        <!-- Review 1 -->
+                        <div class="swiper-slide">
+                            <div class="card-accent p-4 h-100 d-flex flex-column gap-3 rounded-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex gap-1">
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                        alt="Google" style="height: 18px; width: auto;">
+                                </div>
+                                <p class="mb-4 mt-2" style="font-style: italic; color: rgba(255,255,255,0.8) !important;">
+                                    "PrimeGrowth helped us get to the #1 spot on Google Maps for 'emergency plumber'. Our phone hasn't stopped ringing since! Their local SEO expertise is unmatched."
+                                </p>
+                                <div class="d-flex align-items-center gap-3 mt-auto pt-3" style="border-top: 1px solid rgba(255,255,255,0.05);">
+                                    <img src="https://i.pravatar.cc/150?u=mark" class="rounded-circle"
+                                        style="width: 45px; height: 45px; object-fit: cover;" alt="Client">
+                                    <div>
+                                        <h6 class="mb-0 text-white">Mark S.</h6>
+                                        <small class="text-white-50">City Plumbing Solutions</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg"
-                                alt="LinkedIn"></div>
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg"
-                                alt="Shopify"></div>
-                    </div>
-                    <div class="marquee-content" aria-hidden="true">
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-                                alt="Google"></div>
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg"
-                                alt="Microsoft"></div>
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg"
-                                alt="Meta"></div>
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+
+                        <!-- Review 2 -->
+                        <div class="swiper-slide">
+                            <div class="card-accent p-4 h-100 d-flex flex-column gap-3 rounded-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex gap-1">
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                        alt="Google" style="height: 18px; width: auto;">
+                                </div>
+                                <p class="mb-4 mt-2" style="font-style: italic; color: rgba(255,255,255,0.8) !important;">
+                                    "The technical audit was eye-opening. We had so many hidden issues holding us back. Now our site is blazing fast and ranking for keywords we never thought possible."
+                                </p>
+                                <div class="d-flex align-items-center gap-3 mt-auto pt-3" style="border-top: 1px solid rgba(255,255,255,0.05);">
+                                    <img src="https://i.pravatar.cc/150?u=sarah" class="rounded-circle"
+                                        style="width: 45px; height: 45px; object-fit: cover;" alt="Client">
+                                    <div>
+                                        <h6 class="mb-0 text-white">Sarah L.</h6>
+                                        <small class="text-white-50">Luxe Wellness Salon</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg"
-                                alt="LinkedIn"></div>
-                        <div class="marquee-item"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg"
-                                alt="Shopify"></div>
+
+                        <!-- Review 3 -->
+                        <div class="swiper-slide">
+                            <div class="card-accent p-4 h-100 d-flex flex-column gap-3 rounded-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex gap-1">
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                        alt="Google" style="height: 18px; width: auto;">
+                                </div>
+                                <p class="mb-4 mt-2" style="font-style: italic; color: rgba(255,255,255,0.8) !important;">
+                                    "Professional and results-driven. They managed our Google Business Profile and grew our reviews from 12 to 180+ in six months. A complete game changer for us."
+                                </p>
+                                <div class="d-flex align-items-center gap-3 mt-auto pt-3" style="border-top: 1px solid rgba(255,255,255,0.05);">
+                                    <img src="https://i.pravatar.cc/150?u=david" class="rounded-circle"
+                                        style="width: 45px; height: 45px; object-fit: cover;" alt="Client">
+                                    <div>
+                                        <h6 class="mb-0 text-white">David R.</h6>
+                                        <small class="text-white-50">Prime Auto Care</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="swiper-slide">
+                            <div class="card-accent p-4 h-100 d-flex flex-column gap-3 rounded-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex gap-1">
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ffc107 !important; -webkit-text-fill-color: #ffc107 !important;"></i>
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                        alt="Google" style="height: 18px; width: auto;">
+                                </div>
+                                <p class="mb-4 mt-2" style="font-style: italic; color: rgba(255,255,255,0.8) !important;">
+                                    "We've tried several SEO agencies before, but none delivered the transparency and actual lead growth that PrimeGrowth has. They truly understand local business."
+                                </p>
+                                <div class="d-flex align-items-center gap-3 mt-auto pt-3" style="border-top: 1px solid rgba(255,255,255,0.05);">
+                                    <img src="https://i.pravatar.cc/150?u=james" class="rounded-circle"
+                                        style="width: 45px; height: 45px; object-fit: cover;" alt="Client">
+                                    <div>
+                                        <h6 class="mb-0 text-white">James T.</h6>
+                                        <small class="text-white-50">Roofing Pros NY</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-pagination mt-5"></div>
                 </div>
             </div>
         </div>
-        <!-- End Trust Section -->
+        <!-- End Reviews Section -->
 
         <!-- Authority Section -->
-        <div class="section bg-attach-cover" style="padding-block: 8em; background-image: url(image/bg_support.png);">
+        <div id="mission" class="section bg-attach-cover" style="padding-block: 8em; background-image: url(image/bg_support.png);">
             <div class="r-container">
                 <div class="row row-cols-xl-2 row-cols-1 align-items-center g-5">
 
@@ -476,7 +569,7 @@
         </div>
 
         <!-- Results Section -->
-        <div class="section">
+        <div id="results" class="section">
             <div class="r-container">
                 <div class="section-header text-center scrollanimation animated fadeInDown adr-7">
                     <h6 class="mini-heading">RESULTS / EXPERIENCE</h6>
@@ -568,7 +661,8 @@
         </div>
 
         <!-- Services Section -->
-        <div class="section bg-accent-5" id="services" style="background: #0d0d0d; padding-block: 8em; background-image: url(image/bg_support.png);">
+        <div class="section bg-accent-5" id="services"
+            style="background: #0d0d0d; padding-block: 8em; background-image: url(image/bg_support.png);">
             <div class="r-container">
                 <!-- Section Header -->
                 <div class="section-header text-center scrollanimation animated fadeInDown adr-7">
@@ -589,7 +683,7 @@
                                 <i class="fa-solid fa-magnifying-glass-location"></i>
                             </div>
                             <h4 class="process-title">Local SEO</h4>
-                            <p class="small mb-0" style="color: rgba(255,255,255,0.5);">We optimize:</p>
+                            <p class="fs-6 mb-0" style="color: rgba(255,255,255,0.7);">We optimize:</p>
 
                             <ul class="list-unstyled process-list">
                                 <li><i class="fa-solid fa-circle"></i> Google Business Profile</li>
@@ -612,7 +706,7 @@
                                 <i class="fa-solid fa-code"></i>
                             </div>
                             <h4 class="process-title">Technical SEO</h4>
-                            <p class="small mb-0" style="color: rgba(255,255,255,0.5);">We fix performance & structure
+                            <p class="fs-6 mb-0" style="color: rgba(255,255,255,0.7);">We fix performance & structure
                                 issues like:</p>
 
                             <ul class="list-unstyled process-list">
@@ -636,7 +730,7 @@
                                 <i class="fa-solid fa-laptop-code"></i>
                             </div>
                             <h4 class="process-title">SEO-Optimized Website Development</h4>
-                            <p class="small mb-0" style="color: rgba(255,255,255,0.5);">We build websites that: </p>
+                            <p class="fs-6 mb-0" style="color: rgba(255,255,255,0.7);">We build websites that: </p>
 
                             <ul class="list-unstyled process-list">
                                 <li><i class="fa-solid fa-circle"></i> Convert visitors into leads</li>
@@ -659,7 +753,7 @@
                                 <i class="fa-solid fa-location-crosshairs"></i>
                             </div>
                             <h4 class="process-title">Google Business Profile Optimization</h4>
-                            <p class="small mb-0" style="color: rgba(255,255,255,0.5);">We improve:</p>
+                            <p class="fs-6 mb-0" style="color: rgba(255,255,255,0.7);">We improve:</p>
 
                             <ul class="list-unstyled process-list">
                                 <li><i class="fa-solid fa-circle"></i> Category selection</li>
@@ -682,7 +776,7 @@
                                 <i class="fa-solid fa-robot"></i>
                             </div>
                             <h4 class="process-title">Automation & Lead Systems</h4>
-                            <p class="small mb-0" style="color: rgba(255,255,255,0.5);">We implement systems for:</p>
+                            <p class="fs-6 mb-0" style="color: rgba(255,255,255,0.7);">We implement systems for:</p>
 
                             <ul class="list-unstyled process-list">
                                 <li><i class="fa-solid fa-circle"></i> Automated review requests</li>
@@ -702,7 +796,7 @@
         <!-- End Services Section -->
 
         <!-- Professional Process Section -->
-        <div class="section overflow-hidden" style="background: #0d0d0d; padding-block: 8em; position: relative;">
+        <div id="how-it-works" class="section overflow-hidden" style="background: #0d0d0d; padding-block: 8em; position: relative;">
             <div class="r-container">
                 <!-- Header -->
                 <div class="section-header text-center scrollanimation animated fadeInDown adr-7">
@@ -724,7 +818,7 @@
                                 <i class="fa-solid fa-microscope"></i>
                             </div>
                             <h4 class="process-title">Audit & Strategy</h4>
-                            <p class="small mb-0" style="color: rgba(255,255,255,0.5);">We analyze:</p>
+                            <p class="fs-6 mb-0" style="color: rgba(255,255,255,0.7);">We analyze:</p>
 
                             <ul class="list-unstyled process-list">
                                 <li><i class="fa-solid fa-circle"></i> Your website</li>
@@ -747,7 +841,7 @@
                                 <i class="fa-solid fa-screwdriver-wrench"></i>
                             </div>
                             <h4 class="process-title">Foundation</h4>
-                            <p class="small mb-0" style="color: rgba(255,255,255,0.5);">We fix technical & structural
+                            <p class="fs-6 mb-0" style="color: rgba(255,255,255,0.7);">We fix technical & structural
                                 problems:</p>
 
                             <ul class="list-unstyled process-list">
@@ -768,7 +862,7 @@
                                 <i class="fa-solid fa-arrow-up-right-dots"></i>
                             </div>
                             <h4 class="process-title">Authority Building</h4>
-                            <p class="small mb-0" style="color: rgba(255,255,255,0.5);">We improve:</p>
+                            <p class="fs-6 mb-0" style="color: rgba(255,255,255,0.7);">We improve:</p>
 
                             <ul class="list-unstyled process-list">
                                 <li><i class="fa-solid fa-circle"></i> Citations</li>
@@ -787,7 +881,7 @@
                                 <i class="fa-solid fa-chart-line"></i>
                             </div>
                             <h4 class="process-title">Continuous Growth</h4>
-                            <p class="small mb-0" style="color: rgba(255,255,255,0.5);">SEO is ongoing. <br> We monitor:
+                            <p class="fs-6 mb-0" style="color: rgba(255,255,255,0.7);">SEO is ongoing. <br> We monitor:
                             </p>
 
                             <ul class="list-unstyled process-list">
@@ -909,9 +1003,56 @@
 
     </main>
 
+    <footer class="bg-accent-5 py-2" style="border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="r-container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
+                <div class="logo-container">
+                    <img src="image/logo/logo.png" alt="Ali Ahmed" class="img-fluid"
+                        style="width:80px; height:80px; object-fit:contain;">
+                </div>
+                
+                <div class="text-center text-md-start">
+                    <p class="mb-0 text-white-50">© 2026 PrimeGrowth. All rights reserved. Built by Ali Ahmed.</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="rounded-circle d-flex align-items-center justify-content-center" 
+                        style="width: 40px; height: 40px; background: rgba(255,255,255,0.05); color: #ffffff; transition: all 0.3s ease; border: 1px solid rgba(255,255,255,0.1);">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/vendor/bootstrap.bundle.min.js"></script>
     <script src="js/vendor/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.swiperTestimonials', {
+                loop: true,
+                speed: 1000,
+                spaceBetween: 30,
+                slidesPerView: 1,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                freeMode: true,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

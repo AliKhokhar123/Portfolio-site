@@ -97,15 +97,18 @@ $(function () {
 $(function () {
     var swiperTestimonials = new Swiper('.swiper.swiperTestimonials', {
         autoplay: {
-            delay: 2000
+            delay: 0,
+            reverseDirection: true,
+            disableOnInteraction: false,
         },
-        speed: 2000,
+        speed: 5000,
         slidesPerView: 3,
-        slidesPerGroup: 2,
-        initialSlide: 2,
-        spaceBetween: 10,
-        loop: false,
+        slidesPerGroup: 1,
+        spaceBetween: 20,
+        loop: true,
+        allowTouchMove: true,
         grabCursor: true,
+        freeMode: true,
         breakpoints: {
             // when window width is >= 360px
             360: {
@@ -113,7 +116,7 @@ $(function () {
             },
             // when window width is >= 768px
             768: {
-                slidesPerView: 3,
+                slidesPerView: 2,
             },
             // when window width is >= 1024px
             1024: {
@@ -124,9 +127,6 @@ $(function () {
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
-            renderBullet: function (index, className) {
-                return '<span class="' + className + '"></span>';
-            },
         },
     });
 
