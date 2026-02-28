@@ -88,7 +88,7 @@
     --background-color: #222222;
     --accent-color: #A9F8B5;
     --accent-color-2: #B68B2B;
-    --accent-color-3: linear-gradient(78.12deg, #A9F8B5 0.32%, #B68B2B 99.52%);
+    --accent-color-3: linear-gradient(78.12deg, #2478B0 0.32%, #B68B2B 99.52%);
     --accent-color-4: #666669;
     --accent-color-5: #29292a;
     --font-1: "Syne", sans-serif;
@@ -218,7 +218,7 @@ img {
 }
 
 .text-accent {
-    background: linear-gradient(78.12deg, #A9F8B5 0.32%, #B68B2B 99.52%);
+    background: linear-gradient(78.12deg, #2478B0 0.32%, #B68B2B 99.52%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1392,7 +1392,7 @@ a {
 }
 
 .btn-accent {
-    background: linear-gradient(78.12deg, #A9F8B5 0.32%, #B68B2B 99.52%);
+    background: linear-gradient(78.12deg, #2478B0 0.32%, #B68B2B 99.52%);
     color: var(--primary);
     transition: all 0.5s;
     border: 1px solid transparent;
@@ -1484,7 +1484,7 @@ a {
 }
 
 .btn-accent-underline:hover {
-    background: linear-gradient(78.12deg, #A9F8B5 0.32%, #B68B2B 99.52%);
+    background: linear-gradient(78.12deg, #2478B0 0.32%, #B68B2B 99.52%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1574,7 +1574,7 @@ a {
     text-align: center;
     aspect-ratio: 1/1;
     border-radius: 19px;
-    background: linear-gradient(78.12deg, #A9F8B5 0.32%, #B68B2B 99.52%);
+    background: linear-gradient(78.12deg, #2478B0 0.32%, #B68B2B 99.52%);
     box-shadow: 0px 4px 4.8px rgba(4, 4, 4, 0.4);
     color: var(--primary);
     padding: 15px;
@@ -1993,7 +1993,7 @@ a:hover .icon-box-2 {
     aspect-ratio: 1/1;
     transition: all 0.5s;
     border-radius: 19px;
-    background: linear-gradient(78.12deg, #A9F8B5 0.32%, #B68B2B 99.52%);
+    background: linear-gradient(78.12deg, #2478B0 0.32%, #B68B2B 99.52%);
     box-shadow: 0px 4px 4.8px rgba(4, 4, 4, 0.4);
     color: var(--primary);
     padding: 15px;
@@ -2011,7 +2011,7 @@ a:hover .icon-box-2 {
     aspect-ratio: 1/1;
     transition: all 0.5s;
     border-radius: 10px;
-    background: linear-gradient(78.12deg, #A9F8B5 0.32%, #B68B2B 99.52%);
+    background: linear-gradient(78.12deg, #2478B0 0.32%, #B68B2B 99.52%);
     color: var(--primary);
     padding: 20px;
     width: max-content;
@@ -2385,7 +2385,7 @@ a:hover .icon-box-2 {
     justify-content: center;
     align-items: center;
     color: var(--primary);
-    background: linear-gradient(78.12deg, #A9F8B5 0.32%, #B68B2B 99.52%);
+    background: linear-gradient(78.12deg, #2478B0 0.32%, #B68B2B 99.52%);
     border: 1px solid transparent;
 }
 
@@ -2735,7 +2735,7 @@ a:hover .icon-box-2 {
     width: 24px;
     font-size: 12px;
     color: var(--primary);
-    background: linear-gradient(78.12deg, #A9F8B5 0.32%, #B68B2B 99.52%);
+    background: linear-gradient(78.12deg, #2478B0 0.32%, #B68B2B 99.52%);
 }
 
 .card-accent:hover .social-item {
@@ -2754,7 +2754,7 @@ a:hover .icon-box-2 {
 }
 
 .card-accent h5 {
-    background: linear-gradient(78.12deg, #A9F8B5 0.32%, #B68B2B 99.52%);
+    background: linear-gradient(78.12deg, #2478B0 0.32%, #B68B2B 99.52%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -2876,7 +2876,7 @@ a:hover .icon-box-2 {
 }
 
 .card-service:hover .btn-accent-underline {
-    background: linear-gradient(78.12deg, #A9F8B5 0.32%, #B68B2B 99.52%);
+    background: linear-gradient(78.12deg, #2478B0 0.32%, #B68B2B 99.52%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -2892,7 +2892,7 @@ a:hover .icon-box-2 {
 
 .card-service:hover .info {
     border: 1px solid var(--accent-color);
-    background: linear-gradient(78.12deg, #A9F8B5 0.32%, #B68B2B 99.52%);
+    background: linear-gradient(78.12deg, #2478B0 0.32%, #B68B2B 99.52%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
