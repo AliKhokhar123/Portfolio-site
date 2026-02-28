@@ -556,7 +556,7 @@ form select.form-select option:checked {
 }
 
 .logo-container a img{
-     max-width: 100px;
+     max-width: 200px;
      border-radius: 0px;
 }
 
@@ -712,8 +712,8 @@ form select.form-select option:checked {
 
 @media only screen and (max-width: 993px) {
     .r-container {
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
     }
 }
 
@@ -4133,7 +4133,7 @@ a:hover .icon-box-2 {
 
 
     .section {
-        padding: 4rem 1rem;
+        padding: 2.5rem 0;
     }
 
     .accordion .accordion-button {
@@ -4473,21 +4473,45 @@ a:hover .icon-box-2 {
     }
 
 }
-.floating-banner img {
-    max-width: 80%;   
-    height: auto;
-}
+/* Spacing Overrides for Mobile */
+@media (max-width: 993px) {
+    .section[style*="padding"], 
+    .section[style*="margin"],
+    .r-container[style*="padding"],
+    .r-container[style*="margin"] {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
 
+    /* Force bootstrap py-5 and others to be smaller on mobile */
+    .py-5 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    .pb-5 {
+        padding-bottom: 2.5rem !important;
+    }
+    .pt-5 {
+        padding-top: 2.5rem !important;
+    }
 
-@media (max-width: 991px) {
-    .floating-banner img {
-        max-width: 60%;
+    /* Fix specific footer/call-to-action boxes with large padding */
+    div[style*="padding: 53px"] {
+        padding: 20px !important;
+        border-radius: 30px !important;
     }
 }
-
 
 @media (max-width: 575px) {
-    .floating-banner img {
-        display: none;
+    .section[style*="padding"], 
+    .section[style*="margin"],
+    .r-container[style*="padding"],
+    .r-container[style*="margin"],
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
     }
 }
+
