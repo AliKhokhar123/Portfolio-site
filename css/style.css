@@ -140,6 +140,53 @@ h6 {
     font-weight: 500;
 }
 
+/* ---------------------------- */
+/* Section Header Utilities      */
+/* ---------------------------- */
+.section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 3.5rem;
+}
+
+.section-header.text-center {
+    text-align: center;
+    /* align-items: center; */
+}
+
+.section-header.text-start {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.mini-heading {
+    color: var(--accent-color) !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.section-para {
+    font-size: 1.15rem;
+    color: var(--text-color-2);
+    max-width: 800px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 993px) {
+    .section-header {
+        margin-bottom: 2.5rem;
+        gap: 0.5rem;
+    }
+    .section-para {
+        font-size: 1rem;
+    }
+}
+
+
 button,
 a {
     font-size: 18px;
@@ -658,6 +705,16 @@ form select.form-select option:checked {
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 993px) {
+    .r-container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 }
 
 
@@ -4008,7 +4065,7 @@ a:hover .icon-box-2 {
     }
 
     h3 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     h4 {
@@ -4076,7 +4133,18 @@ a:hover .icon-box-2 {
 
 
     .section {
-        padding: 4em 2em 4em 2em;
+        padding: 4rem 1rem;
+    }
+
+    .accordion .accordion-button {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .accordion .accordion-body {
+        font-size: 13px;
+        padding: 15px;
+        padding-top: 0;
     }
 
     .divider {
